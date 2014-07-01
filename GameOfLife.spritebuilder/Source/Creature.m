@@ -20,6 +20,9 @@ self = [super initWithImageNamed:@"GameOfLifeAssets/Assets/bubble.png"];
 }
 
 
-
+- (void)setIsAlive:(bool)newState{
+    _isAlive = newState;
+    self.visible = _isAlive;
+}
 
 @end
